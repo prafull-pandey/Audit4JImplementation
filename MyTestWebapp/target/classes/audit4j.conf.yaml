@@ -1,0 +1,13 @@
+!Configuration
+handlers: 
+- !org.audit4j.handler.db.DatabaseAuditHandler {}
+layout: !org.audit4j.core.layout.SimpleLayout {}
+metaData: !com.pandey.audit.AuditMetaData {}
+properties:
+  log.file.location: D:\Prafull
+  db_connection_type: pooled
+  db_driver: org.postgresql.Driver
+  embeded: false
+  db_url: jdbc:postgresql://localhost:5432/postgres
+  db_user: postgres
+  db_password: postgres
